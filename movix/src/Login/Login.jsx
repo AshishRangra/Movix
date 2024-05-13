@@ -40,7 +40,7 @@ const Login = ({
       setTimeout(() => {
         localStorage.removeItem("token");
         navigate("/login2");
-      }, 3600 * 1000);
+      }, 1000 * 5);
       alert("Login Successfull");
       handleEnable();
       let username = formData.email.charAt(0).toUpperCase();
@@ -58,7 +58,7 @@ const Login = ({
     navigate("/changePass");
   };
   return (
-    <div>
+    <div className="login-background">
       <div className="login-container">
         <form onSubmit={handleSubmit}>
           <div className="form-group">

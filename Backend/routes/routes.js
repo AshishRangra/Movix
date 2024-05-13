@@ -25,7 +25,7 @@ const sendOTP = async (email, otp) => {
   const info = {
     from: process.env.EMAIL,
     to: email,
-    subject: "OTP for password reset",
+    subject: "OTP for verification",
     text: `Your OTP is ${otp}`,
   };
   await transporter.sendMail(info, (err) => {

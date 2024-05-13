@@ -40,7 +40,8 @@ const ChangePassword = () => {
     }
   };
   return (
-    <div className="change-password-container">
+   <div className="change-password-background">
+     <div className="change-password-container">
       <form onSubmit={CheckDetails} id="change-password-form">
         <label htmlFor="email">Email</label>
         <input type="email" name="email" id="email" onChange={handleChange} />
@@ -86,6 +87,7 @@ const ChangePassword = () => {
         <button type="submit">Change Password</button>
       </form>
     </div>
+   </div>
   );
 };
 

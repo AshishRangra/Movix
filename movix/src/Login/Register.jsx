@@ -72,8 +72,9 @@ function Register() {
     }
   };
   return (
-    <div className="register-container">
-      <form onSubmit={submit}>
+   <div className="register-background">
+     <div className="register-container">
+      <form onSubmit={submit} className="login-form">
         <label htmlFor="email" style={{ display: "block" }}>
           Email
         </label>
@@ -125,6 +126,7 @@ function Register() {
         <button type="submit">Register</button>
       </form>
     </div>
+   </div>
   );
 }
 
