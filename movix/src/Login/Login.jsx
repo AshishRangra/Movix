@@ -40,7 +40,7 @@ const Login = ({
       setTimeout(() => {
         localStorage.removeItem("token");
         navigate("/login2");
-      }, 1000 * 5);
+      }, 1000 * 3600);
       alert("Login Successfull");
       handleEnable();
       let username = formData.email.charAt(0).toUpperCase();

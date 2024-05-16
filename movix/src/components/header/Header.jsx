@@ -116,16 +116,14 @@ const Header = ({ handleLogout, dataFromChild }) => {
       {/* <button id="Logout" onClick={handleLogout}>
         Log Out
       </button> */}
-     <div className="dropdown">
-      <div className="username">{dataFromChild.username}</div>
-      <div className="dropdown-content">
-      <Link>{dataFromChild.email}</Link>
-        <Link onClick={handleLogout}>Logoout</Link>
-        <Link>Your subscription</Link>
+      <div className="dropdown">
+        <div className="username">{dataFromChild.username}</div>
+        <div className="dropdown-content">
+          <Link>{dataFromChild.email}</Link>
+          <Link onClick={handleLogout}>Logout</Link>
+          <Link>Your subscription</Link>
+        </div>
       </div>
-     </div>
-      
-      
     </header>
   );
 };
